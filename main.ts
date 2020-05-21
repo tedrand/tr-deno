@@ -1,19 +1,12 @@
-import { Application } from "https://deno.land/x/oak/mod.ts"
-import * as flags from "https://deno.land/std/flags/mod.ts"
+import { Application } from "https://deno.land/x/abc/mod.ts";
+import { getPort } from "./server/utils.ts";
 
 const app = new Application()
 
-const { args, exit } = Deno
-const argPort = flags.parse(args).port
-const port = argPort ? Number(argPort) : 8080
+app.static("/public", "public")
 
-if (isNaN(port)) {
-    console.log("port is not number")
-    exit(1)
-}
+app.file("/", "public/index.html")
 
-app.use((ctx) => {
-  ctx.response.body = "Hello World!"
-});
+console.log(`🦕 Listening on ${getPort()}`);
+await app.start({ port: getPort() });
 
-await app.listen({ port: port })
