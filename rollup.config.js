@@ -3,7 +3,8 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
-import analyze from 'rollup-plugin-analyzer'
+import postcss from 'rollup-plugin-postcss';
+import analyze from 'rollup-plugin-analyzer';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -37,7 +38,11 @@ export default {
 		}),
 		commonjs(),
 
-		analyze(),
+		// NOT INCLUDED IN TEMPLATE
+		postcss(), // for svulma
+		analyze(), // bundle size analyzer
+
+
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
 		!production && serve(),
