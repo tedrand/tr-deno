@@ -1,0 +1,19 @@
+<nav id="top-nav" class="nav">
+    <a class="nav-link" href="/"><img class="brand-logo" src="/static/t-logo.png" alt=""></a>
+    <a class="nav-link" href="/">About Me</a>
+    <a class="nav-link" href="/">Contact</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <img class="bars-icon" src="/static/Hamburger_icon.svg.png" alt="">
+    </a>
+</nav>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("top-nav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
