@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/static/favicon.png">
+    <title>Home | T.R.D.C.</title>
+    <%- await include("./public/partials/style.ejs") %>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 43vh;
+            max-width: 400px;
+            margin: 5em auto;
+            color: white;
+            text-align: center;
+            padding: 5em;
+            background-image: linear-gradient(to top right, #643480, #348064);
+        }
+
+        .container * {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        input {
+            border-radius: .25em;
+            width: 8em;
+        }
+        button {
+            width: 6em;
+            color: white;
+            background-color: #222;
+            display: block;
+            margin: auto;
+            border: none;
+            padding: .5em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <%- await include("./public/partials/nav.ejs") %>
+    <main>
+
+        <div class="container">
+            <div>
+                <label for="user"><b>Username: </b></label>
+                <input id="userInput" type="text" placeholder="Enter Username" name="user" required>
+            </div>
+            <div>
+                <label for="pwd"><b>Password: </b></label>
+                <input id="pwdInput" type="password" placeholder="Enter Password" name="pwd" required>
+            </div>
+
+            <button id="loginBtn" type="submit" onclick="login()">Login</button>
+            <!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label> -->
+        </div>
+        <script>
+            async function login() {
+                const user = await $("#userInput").val();
+                const pwd = await $("#pwdInput").val();
+                console.log(user + pwd)
+                $.post("/login", {
+                    username: user,
+                    password: pwd
+                }, function (data, status) {
+                    // $.get({
+                    //     url: "/admin",
+                    //     xhrFields: {
+                    //         withCredentials: true
+                    //     },
+                    //     beforeSend: function (xhr) {
+                    //         xhr.setRequestHeader('Authorization', `Bearer ${JSON.parse(data).jwt}`);
+                    //     },
+                    //     success: function() {
+                    //         window.open("/admin")
+                    //     }
+                    // })
+                    console.log(data)
+                    localStorage.setItem("token", JSON.parse(data).jwt);
+                    var test = $('<a/>', {
+                        text: 'Go To Admin Page',
+                        href: `/admin/index?token=${JSON.parse(data).jwt}`
+                    });
+                    $(".container").append(test)
+                })
+            }
+        </script>
+    </main>
+    <%- await include("./public/partials/footer.ejs") %>
+</body>
+
+</html>
