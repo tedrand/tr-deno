@@ -10,14 +10,20 @@ app.renderer = {
     },
 };
 
-app
-    .static("/static", "assets")
-    .get("/", async (c) => { 
-        await c.render("./public/index.ejs", { 
-            name: "Ted Rand" 
-        });
+app.static("/static", "assets");
+
+app.get("/", async (c) => { 
+    console.log(c.response.headers);
+    c.response.headers = new Headers({
+        "cache-control": "public, max-age=604800, immutable"
     })
-    .start({ port: getPort() });
+    console.log(c.response.headers)
+    await c.render("./public/index.ejs", { 
+        name: "Ted Rand" 
+    });
+})
+
+app.start({ port: getPort() });
 
 console.log(`🦕 Listening on ${getPort()}`);
 
