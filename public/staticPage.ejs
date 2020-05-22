@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="/images/static/favicon.png">
+	<title>Home | T.R.D.C.</title>
+	<%- await include("./public/partials/style.ejs") %>
+    <style>
+        body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+            overflow-x: hidden;
+		}
+
+        .container {
+            min-height: 73vh;
+            margin: 0 2em;
+            max-width: 600px;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+	<%- await include("./public/partials/nav.ejs") %>
+	<main>
+        
+        <div class="container">
+            <h1><%= data.title %></h1>
+            <p><%= data.date_created %></p>
+            <%- data.html_str %>
+        </div>
+	</main>
+	<%- await include("./public/partials/footer.ejs") %>
+</body>
+
+</html>
