@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/images/static/favicon.png">
-    <title>Home | T.R.D.C.</title>
-    <%- await include("./public/partials/style.ejs") %>
+    <%- await include("public/partials/head.ejs") %>
     <style>
         body {
             display: flex;
@@ -50,7 +46,7 @@
 </head>
 
 <body>
-    <%- await include("./public/partials/nav.ejs") %>
+    <%- await include("public/partials/nav.ejs") %>
     <main>
 
         <div class="container">
@@ -100,7 +96,7 @@
             }
         </script>
     </main>
-    <%- await include("./public/partials/footer.ejs") %>
+    <%- await include("public/partials/footer.ejs") %>
 </body>
 
 </html>

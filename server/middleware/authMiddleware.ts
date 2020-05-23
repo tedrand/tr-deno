@@ -1,8 +1,7 @@
 import { MiddlewareFunc } from "https://deno.land/x/abc/mod.ts";
 import { validateJwt } from "https://deno.land/x/djwt/validate.ts"
-import { config } from "https://deno.land/x/dotenv/mod.ts";
 
-const key = config().SECRET_KEY;
+const key = Deno.env.toObject().SECRET_KEY;
 
 export const authMiddleware: MiddlewareFunc = next => async c => {
     const headers: Headers = c.request.headers;

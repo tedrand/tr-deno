@@ -2,69 +2,21 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="/images/static/favicon.png">
-	<title>Home | T.R.D.C.</title>
-	<%- await include("./public/partials/style.ejs") %>
-	<!-- Home Page Specific Styles -->
-	<style>
-		html,
-		body {
-			height: 100%;
-			overflow: hidden;
-			
-		}
-
-		body {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			background-color: #643480;
-			background-image: linear-gradient(to top right, #643480, #348064);
-			box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-		}
-
-		.cover {
-			max-width: 30em;
-			margin: auto;
-			color: white;
-		}
-
-		main {
-			text-align: center;
-		}
-
-		.thumbnail {
-			width: 10em;
-			border-radius: 5em;
-			filter: grayscale(100%);
-		}
-
-		.lead {
-			font-size: 18px;
-			line-height: 24px;
-		}
-
-		.lead a {
-			color: #00b3f4;
-			text-decoration: none;
-		}
-	</style>
+	<%- await include("public/partials/head.ejs") %>
+	<%- await include("public/styles/index.ejs") %>
 </head>
 
 <body>
-	<%- await include("./public/partials/nav.ejs") %>
+	<%- await include("public/partials/nav.ejs") %>
 	<main>
 		<div class="cover">
 			<img class="thumbnail" src="/static/images/headshot.png" alt="" />
 			<h1>Patent Agent | Law Student</h1>
-			<p class="lead">Now running on <a href="https://deno.land/">Deno</a>. Check out the code for the
-				site. Please take a look at the <a href="/terms">Terms of Use</a> and
-				<a href="/privacy">Privacy Policy</a>.</p>
+			<p class="lead">This Website is now running on <a href="https://deno.land/">Deno</a>. Check out the code for the
+			site at my Github repository <a href="">here</a>.</p> 
 		</div>
 	</main>
-	<%- await include("./public/partials/footer.ejs") %>
+	<%- await include("public/partials/footer.ejs") %>
 </body>
 
 </html>
