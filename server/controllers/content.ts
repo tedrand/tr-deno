@@ -10,13 +10,12 @@ interface Content {
 }
 
 export const getContent = async (c: any, content: string) => {
-    let ctx = c
-    await fetch(`https://pycourt.herokuapp.com/contents/${content}`)
+    await fetch(`https://pycourt.herokuapp.com/api/content/${content}`)
         .then((resp) => resp.json())
         .then(async function(data) {
+            console.log(data)
             await c.render("./public/staticPage.ejs", {
-                data: data[0]
+                data: data
             });
-            
         })
 }
