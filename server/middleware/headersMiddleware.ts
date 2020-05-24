@@ -1,6 +1,5 @@
 import { MiddlewareFunc } from "https://deno.land/x/abc/mod.ts";
 
-
 // Set headers for different types of static files that get sent across the server
 export const setStaticHeaders: MiddlewareFunc = next => c => {
     if (c.path.indexOf("/static/images/") === 0) {

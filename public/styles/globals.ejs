@@ -5,6 +5,7 @@
     body {
         margin: 0;
         font-family: Helvetica, sans-serif;
+        overflow-x: hidden;
     }
 
     h1 {
@@ -18,6 +19,11 @@
         display: block;
     }
 
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+
     .nav-link {
         float: left;
         display: block;
@@ -28,12 +34,20 @@
         font-size: 17px;
     }
 
+    .nav-link img {
+        height: 17px;
+    }
+
     .nav-link:hover {
         color: #f2f2f2;
     }
 
     .brand-logo {
         filter: invert(90%);
+    }
+
+    .brand-logo:hover {
+        filter: invert(100%);
     }
 
     .bars-icon {
@@ -65,10 +79,25 @@
         color: #f2f2f2;
     }
 
+    .btn {
+        text-decoration: none;
+        color: white;
+        background-color: #348064;
+        padding: .5em 1em;
+        border-radius: .25em;
+    }
+
+    .btn:hover {
+        background-color: #41a07d;
+    }
 
     /* Responsive */
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 600px) {
+        .container {
+            max-width: 80%;
+        }
+
         .nav-link:not(:first-child) {
             display: none;
         }
