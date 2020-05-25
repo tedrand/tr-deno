@@ -2,6 +2,7 @@ import { Application } from "https://deno.land/x/abc/mod.ts";
 import { renderFile } from "https://deno.land/x/dejs/mod.ts";
 import { getContent } from "./server/controllers/content.ts";
 import { setStaticHeaders, setPageHeaders } from "./server/middleware/headersMiddleware.ts";
+import { getCases } from './server/controllers/tracker.ts';
 
 const app = new Application();
 app.renderer = {
@@ -11,10 +12,15 @@ app.renderer = {
 };
 app.static("/static", "assets", setStaticHeaders);
 
+
+// Static Pages
 app.get("/", async (c) => { await c.render("./public/index.ejs") }, setPageHeaders);
 app.get("/about", async (c) => getContent(c, "about"), setPageHeaders);
 app.get("/terms", async (c) => getContent(c, "terms"), setPageHeaders);
 app.get("/privacy", async (c) => getContent(c, "privacy"), setPageHeaders);
+
+// Court Tracker
+app.get("/tracker", async (c) => getCases({ c, ct: "cafc" }), setPageHeaders);
 
 app.file("/robots.txt", "./assets/robots.txt");
 app.file("/sitemap.xml", "./assets/sitemap.xml");

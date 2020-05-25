@@ -1,0 +1,42 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+	<%- await include("public/partials/head.ejs") %>
+	<title>CourtTracker</title>
+	<meta name="description"
+		content="The CAFC Court Tracker provides the most recent opinions from select courts in the United States.">
+</head>
+
+<body>
+	<%- await include("public/partials/nav.ejs") %>
+	<div class="container">
+		<h1>Court Tracker</h1>
+		<h2>U.S. Court of Appeals for the Federal Circuit</h2>
+		<p>
+			The Federal Circuit (CAFC) hears mainly intellectual property disputes.
+		</p>
+		<table id="tracker-table">
+			<tr>
+				<th>Case Name</th>
+				<th>Date Created</th>
+				<th>Download</th>
+			</tr>
+			<% for (let i=0; i< cases.length; i++) { %>
+			<tr>
+				<td><%= cases[i].name %></td>
+				<td><%= new Date(cases[i].date_created).toLocaleDateString() %></td>
+				<td>
+					<a href="<%= cases[i].download_url %>" target="_blank" class="btn">Download</a>
+				</td>
+			</tr>
+			<% } %>
+		</table>
+
+
+	</div>
+	<%- await include("public/partials/footer.ejs") %>
+	<%- await include("public/partials/ampTag.ejs") %>
+</body>
+
+</html>

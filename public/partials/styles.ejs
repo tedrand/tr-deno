@@ -151,10 +151,39 @@
         color: var(--color-tertiary-lighter);
     }
 
+    .container {
+        margin: 1em auto;
+    }
+
+    #tracker-table {
+        display: block;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #tracker-table td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #tracker-table tr:nth-child(even) {
+        background-color: var(--font-color-light);
+    }
+
+    #tracker-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: var(--color-secondary);
+        color: white;
+    }
+
     @media only screen and (max-width: 600px) {
         .container {
             max-width: 85%;
             margin: auto;
+            overflow-x: scroll;
         }
     }
 </style>
