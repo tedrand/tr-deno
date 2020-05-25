@@ -1,0 +1,3 @@
+Sitemap: https://www.tedrand.com
+User-agent: *
+Disallow:

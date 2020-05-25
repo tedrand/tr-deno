@@ -16,6 +16,9 @@ app.get("/about", async (c) => getContent(c, "about"), setPageHeaders);
 app.get("/terms", async (c) => getContent(c, "terms"), setPageHeaders);
 app.get("/privacy", async (c) => getContent(c, "privacy"), setPageHeaders);
 
+app.file("/robots.txt", "./assets/robots.txt");
+app.file("/sitemap.xml", "./assets/sitemap.xml");
+
 const PORT = parseInt(Deno.env.toObject().PORT) || 8080
 app.start({ port: PORT });
 console.log(`🦕 Listening on ${PORT}`);

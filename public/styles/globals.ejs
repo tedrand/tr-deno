@@ -1,12 +1,19 @@
 <style amp-custom>
     :root {
-        --color-primary: #643480; /* Kingfisher Daisy */
+        /* Kingfisher Daisy */
+        --color-primary: #643480;
 
-        --color-secondary: #348064; /* Veridian */
+        /* Veridian */
+        --color-secondary: #348064;
 
-        --color-dark: #1b1b1b; /* Eerie Black */
+        /* Hot Curry */
+        --color-tertiary: #806434;
+        --color-tertiary-lighter: #908573;
 
-        --font-color-light: rgb(255, 255, 255, 0.7);
+        /* Eerie Black */
+        --color-dark: #1b1b1b;
+
+        --font-color-light: #dedede;
         --font-color-lighter: #f2f2f2;
 
         --font-size-primary: 18px;
@@ -18,23 +25,34 @@
 
     html,
     body {
-        margin: 0; padding: 0;
+        margin: 0;
+        padding: 0;
         font-family: var(--font-primary);
         overflow-x: hidden;
     }
 
-    p, a, pre, span {
+    p,
+    a,
+    pre,
+    span {
         font-size: var(--font-size-primary);
+        line-height: var(--line-height-primary);
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-weight: 300;
         font-family: var(--font-decorative);
     }
 
     a {
         text-decoration: none;
-        color: lightblue;
+        color: var(--font-color-light);
+    }
+
+    a:hover {
+        color: var(--font-color-lighter);
     }
 
     footer {
@@ -85,7 +103,6 @@
 
     .nav-link {
         float: left;
-        color: var(--font-color-light);
         padding: 16px 12px 8px 12px;
         font-size: var(--font-size-primary);
     }
@@ -93,8 +110,6 @@
     .nav-link:hover {
         color: var(--font-color-lighter);
     }
-
-    /* Footer Components */
 
     .thumbnail {
         width: 90px;
@@ -111,7 +126,7 @@
         overflow: hidden;
         text-align: center;
     }
-    
+
     #cover {
         max-width: 30em;
         padding: 20vh 1em 50vh;
@@ -126,5 +141,20 @@
         height: 2em;
         padding-top: 0;
         padding-bottom: .5em;
+    }
+
+    .lead a {
+        color: var(--color-tertiary);
+    }
+
+    .lead a:hover {
+        color: var(--color-tertiary-lighter);
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            max-width: 85%;
+            margin: auto;
+        }
     }
 </style>
