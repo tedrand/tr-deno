@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html ⚡ lang="en">
 
 <head>
 	<%- await include("public/partials/head.ejs") %>
-    <style>
-        body {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-    </style>
 </head>
 
 <body>
 	<%- await include("public/partials/nav.ejs") %>
-	<main>
-        
-        <div class="container">
-            <h1><%= data.title %></h1>
-            <small><i><%- data.last_updated %></i></small>
-            <%- data.html_str %>
-        </div>
-	</main>
-	<%- await include("public/partials/footer.ejs") %>
+	<div class="container">
+		<h1><%= data.title %></h1>
+		<small id="dateStr"><% new Date('data.last_updated').toLocaleDateString %></small>
+		<script>
+			const formattedDate = new Date("<%= data.last_updated %>").toLocaleDateString();
+			document.getElementById("dateStr").innerHTML = `<b>Last Updated:</b> ${formattedDate}`;
+		</script>
+		<%- data.html_str %>
+	</div>
+	<footer>
+		<small>©2020 Theodore A. Rand</small><br>
+		<small>
+			<a href="/privacy">Privacy Policy</a> |
+			<a href="/terms">Terms of Use</a>
+		</small>
+	</footer>
 </body>
 
 </html>

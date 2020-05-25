@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html ⚡ lang="en" style="height:100%;overflow:hidden;">
 
 <head>
 	<%- await include("public/partials/head.ejs") %>
-	<%- await include("public/styles/index.ejs") %>
 </head>
 
-<body>
+<body id="cover-page">
 	<%- await include("public/partials/nav.ejs") %>
-	<main>
-		<div class="cover">
-			<img class="thumbnail" src="/static/images/headshot.jpg" alt="" />
-			<h1>Patent Agent | Law Student</h1>
-			<p class="lead">This Website is now running on <a href="https://deno.land/" target="_blank">Deno</a>. Check out the code for the
-			site at my Github repository <a href="https://github.com/tedrand/tr-deno" target="_blank">here</a>.</p>
-			<a class="btn" href="/static/Theodore_Rand_Resume.pdf" target="_blank" download>Download Resume</a> 
-		</div>
-	</main>
-	<%- await include("public/partials/footer.ejs") %>
+	<div id="cover">
+		<amp-img width="90" height="88"
+			class="thumbnail" 
+			src="/static/img/headshot.jpg" 
+			alt="Headshot of Theodore Rand">
+		</amp-img>
+		<h1>Patent Agent | Law Student</h1>
+		<p class="lead">This Website is now running on <a href="https://deno.land/" target="_blank">Deno</a>. Check out the code for the
+		site at my Github repository <a href="https://github.com/tedrand/tr-deno" target="_blank">here</a>.</p>
+		<a class="btn" href="/static/Theodore_Rand_Resume.pdf" target="_blank" download>Download Resume</a> 
+	</div>
+	<footer id="cover-footer">
+		<small style="float:left;">©2020 Theodore A. Rand</small>
+		<small style="float:right;">
+			<a class="footer-link" href="/privacy">Privacy Policy</a> |
+			<a class="footer-link" href="/terms">Terms of Use</a>
+		</small>
+	</footer>
 </body>
-
 </html>

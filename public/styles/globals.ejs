@@ -1,88 +1,71 @@
-<style>
-    /* Global Variables */
-    :root {}
+<style amp-custom>
+    :root {
+        --color-primary: #643480; /* Kingfisher Daisy */
 
+        --color-secondary: #348064; /* Veridian */
+
+        --color-dark: #1b1b1b; /* Eerie Black */
+
+        --font-color-light: rgb(255, 255, 255, 0.7);
+        --font-color-lighter: #f2f2f2;
+
+        --font-size-primary: 18px;
+        --line-height-primary: 24px;
+
+        --font-primary: Calibri;
+        --font-decorative: Cambria;
+    }
+
+    html,
     body {
-        margin: 0;
-        font-family: Helvetica, sans-serif;
+        margin: 0; padding: 0;
+        font-family: var(--font-primary);
         overflow-x: hidden;
     }
 
-    h1 {
+    p, a, pre, span {
+        font-size: var(--font-size-primary);
+    }
+
+    h1, h2, h3 {
         font-weight: 300;
+        font-family: var(--font-decorative);
     }
 
-    /* Nav Components */
-    #top-nav {
-        width: 100%;
-        background-color: #1b1b1b;
-        display: block;
-    }
-
-    .container {
-        max-width: 600px;
-        margin: auto;
-    }
-
-    .nav-link {
-        float: left;
-        display: block;
-        color: rgb(255, 255, 255, 0.7);
-        text-align: center;
-        padding: 14px 16px 8px 16px;
+    a {
         text-decoration: none;
-        font-size: 17px;
+        color: lightblue;
     }
 
-    .nav-link img {
-        height: 17px;
-    }
-
-    .nav-link:hover {
-        color: #f2f2f2;
-    }
-
-    .brand-logo {
-        filter: invert(90%);
-    }
-
-    .brand-logo:hover {
-        filter: invert(100%);
-    }
-
-    .bars-icon {
-        filter: invert(90%);
-        height: 20px;
-        padding: 14px 16px;
-        display: none;
-    }
-
-    /* Footer Components */
     footer {
         width: 100%;
-        background-color: #1b1b1b;
-        color: rgb(255, 255, 255, 0.7);
-        padding: 10px;
+        height: 4em;
+        background-color: var(--color-dark);
         text-align: center;
+        padding-top: 1em;
     }
 
     footer small {
-        line-height: 20px;
+        font-size: 13px;
+        color: var(--font-color-light);
+        margin: 1em;
     }
 
-    .footer-link {
-        text-decoration: none;
-        color: rgb(255, 255, 255, 0.7);
+    footer small a {
+        font-size: 13px;
+        color: var(--font-color-light);
     }
 
-    .footer-link:hover {
-        color: #f2f2f2;
+    .container {
+        max-width: 590px;
+        min-height: 70vh;
+        margin: auto;
     }
 
     .btn {
         text-decoration: none;
         color: white;
-        background-color: #348064;
+        background-color: var(--color-secondary);
         padding: .5em 1em;
         border-radius: .25em;
     }
@@ -91,39 +74,57 @@
         background-color: #41a07d;
     }
 
-    /* Responsive */
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (max-width: 600px) {
-        .container {
-            max-width: 80%;
-        }
 
-        .nav-link:not(:first-child) {
-            display: none;
-        }
-
-        .bars-icon {
-            float: right;
-            display: block;
-        }
+    /* Nav Components */
+    #top-nav {
+        display: block;
+        width: 100%;
+        height: 48px;
+        background-color: var(--color-dark);
     }
 
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 600px) {
-        #top-nav.responsive {
-            position: relative;
-        }
+    .nav-link {
+        float: left;
+        color: var(--font-color-light);
+        padding: 16px 12px 8px 12px;
+        font-size: var(--font-size-primary);
+    }
 
-        #top-nav.responsive a.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
+    .nav-link:hover {
+        color: var(--font-color-lighter);
+    }
 
-        #top-nav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
+    /* Footer Components */
+
+    .thumbnail {
+        width: 90px;
+        height: 88px;
+        border-radius: 45px;
+        filter: grayscale(100%);
+    }
+
+    #cover-page {
+        background-color: var(--color-primary);
+        background-image: linear-gradient(to top right, var(--color-primary), var(--color-secondary));
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    #cover {
+        max-width: 30em;
+        padding: 20vh 1em 50vh;
+        margin: auto;
+        color: var(--font-color-lighter);
+    }
+
+    #cover-footer {
+        position: fixed;
+        bottom: 0;
+        background-color: var(--color-dark);
+        height: 2em;
+        padding-top: 0;
+        padding-bottom: .5em;
     }
 </style>

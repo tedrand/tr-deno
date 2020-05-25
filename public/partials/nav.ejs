@@ -1,25 +1,13 @@
 <nav id="top-nav" class="nav">
-    <a class="nav-link" href="/"><img class="brand-logo" src="/static/images/t-logo.png" alt=""></a>
+    
+    <a class="nav-link" href="/about">Home</a>
     <a class="nav-link" href="/about">About Me</a>
-    <a class="nav-link" style="float: right;" href="mailto:randtheodore@gmail.com" target="_blank">
-        <img src="/static/images/gmail.jpg" alt="">
-    </a>
+    <a class="nav-link" href="/about">Blog</a>
+    <a class="nav-link" href="/about">Opinion Tracker</a>
     <a class="nav-link" style="float: right;" href="https://www.linkedin.com/in/tedrand/" target="_blank">
-        <img src="/static/images/LI-In-Bug.jpg" alt="">
-    </a>
-    <!-- <a class="nav-link" href="/">Contact</a> -->
-    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-        <img class="bars-icon" src="/static/images/hamburger_icon.svg" alt="">
+        <amp-img width="20" height="20"
+            src="/static/img/linkedin.png" 
+            alt="View my LinkedIn Profile">
+        </amp-img>
     </a>
 </nav>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("top-nav");
-        if (x.className === "nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav";
-        }
-    }
-</script>
