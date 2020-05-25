@@ -1,6 +1,6 @@
 // import { config } from "https://deno.land/x/dotenv/mod.ts";
 import { Context } from "https://deno.land/x/abc/mod.ts";
-const API_KEY = Deno.env.toObject().COURT_LISTENER_KEY || "API KEY NOT FOUND";
+console.log(Deno.env.toObject().COURT_LISTENER_KEY || "API KEY NOT FOUND");
 
 export const getCases = async ({ c, ct }: { c: Context; ct: string }) => {
   await fetch(
