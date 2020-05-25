@@ -8,13 +8,13 @@ export const getCases = async ({ c, ct }: { c: Context; ct: string }) => {
     {
       method: "GET",
       headers: {
-        "Authorization": `Token ${API_KEY}`,
+        "Authorization": `Token ${Deno.env.toObject().COURT_LISTENER_KEY}`,
       },
     },
   )
     .then((resp) => resp.json())
     .then(async function (data: any) {
-        console.log(API_KEY);
+        console.log(Deno.env.toObject().COURT_LISTENER_KEY);
         let cases: any = [];
         data.results.forEach(function (value: any) {
             // Get formatted case name from local path
