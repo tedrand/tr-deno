@@ -12,7 +12,7 @@ interface Case {
 
 export const getCases = async ({ c, key }: { c: Context; key: any }) => {
   const { ct } = c.params;
-  await fetch(`${Deno.env.toObject().PORT}/static/cache/${ct}.json`)
+  await fetch(`${Deno.env.toObject().BASE_PATH}/static/cache/${ct}.json`)
     .then((resp) => resp.json())
     .then(async function (data: any) {
       let cases: Case[] = [];
