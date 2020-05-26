@@ -1,14 +1,20 @@
 <style amp-custom>
     :root {
         /* Kingfisher Daisy */
+        --color-primary-darkest: #251330;
+        --color-primary-darker: #562d6e;
         --color-primary: #643480;
+        --color-primary-lighter: #8043a4;
+        --color-primary-lightest: #8e4bb6;
 
         /* Veridian */
         --color-secondary: #348064;
+        --color-secondary-lighter: #41a07d; 
 
         /* Hot Curry */
         --color-tertiary: #806434;
         --color-tertiary-lighter: #908573;
+        --color-tertiary-lightest: #b68e4b;
 
         /* Eerie Black */
         --color-dark: #1b1b1b;
@@ -20,7 +26,6 @@
         --line-height-primary: 24px;
 
         --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        --font-decorative: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     html,
@@ -39,13 +44,6 @@
         line-height: var(--line-height-primary);
     }
 
-    h1,
-    h2,
-    h3 {
-        font-weight: 300;
-        font-family: var(--font-decorative);
-    }
-
     a {
         text-decoration: none;
         color: var(--font-color-light);
@@ -61,6 +59,7 @@
         background-color: var(--color-dark);
         text-align: center;
         padding-top: 1em;
+        border-top: 3px solid var(--color-primary);
     }
 
     footer small {
@@ -72,6 +71,22 @@
     footer small a {
         font-size: 13px;
         color: var(--font-color-light);
+    }
+
+    footer small a:hover {
+        background-color: var(--color-primary);
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--font-color-light);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary);
     }
 
     .container {
@@ -92,13 +107,13 @@
         background-color: #41a07d;
     }
 
-
     /* Nav Components */
     #top-nav {
         display: block;
         width: 100%;
         height: 48px;
         background-color: var(--color-dark);
+        border-bottom: 3px solid var(--color-secondary-lighter);
     }
 
     .nav-link {
@@ -109,6 +124,53 @@
 
     .nav-link:hover {
         color: var(--font-color-lighter);
+        background-color: var(--color-primary);
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: var(--font-size-primary);
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: var(--color-secondary-lighter);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .thumbnail {
@@ -140,15 +202,16 @@
         background-color: var(--color-dark);
         height: 2em;
         padding-top: 0;
-        padding-bottom: .5em;
+        padding-bottom: 1em;
+        border-top: 3px solid var(--color-primary);
     }
 
     .lead a {
-        color: var(--color-tertiary);
+        color: var(--color-tertiary-lightest);
     }
 
     .lead a:hover {
-        color: var(--color-tertiary-lighter);
+        color: var(--font-color-light);
     }
 
     .container {
@@ -179,10 +242,26 @@
         color: white;
     }
 
+    #opinion {
+        margin-left: 2em;
+    }
+
+    #opinion pre, span {
+        font-family: Cambria, Garamond, Times;
+        display: inline;
+    }
+
+    #opinion span {
+        color: blue;
+    }
+
     @media only screen and (max-width: 600px) {
         .container {
             max-width: 85%;
             margin: auto;
+        }
+
+        .container #opinion {
             overflow-x: scroll;
         }
     }

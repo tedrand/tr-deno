@@ -12,7 +12,7 @@ export const getContent = async (c: any, content: string) => {
   await fetch(`https://pycourt.herokuapp.com/api/content/${content}`)
     .then((resp) => resp.json())
     .then(async function (data: Content) {
-      await c.render("./public/staticPage.ejs", {
+      await c.render("./public/content.ejs", {
         data: data,
       });
     });

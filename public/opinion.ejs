@@ -1,0 +1,24 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+	<%- await include("public/partials/head.ejs") %>
+	<title>Opinion Viewer | T.R.D.C.</title>
+	<meta name="description" content="<%= opinion.name %>">
+</head>
+
+<body>
+	<%- await include("public/partials/nav.ejs") %>
+	<div class="container">
+		<h1><%= opinion.name %></h1>
+        <small id="dateStr"><%= new Date(opinion.date_created).toLocaleDateString() %></small>
+        <hr>
+        <div id="opinion">
+            <%- opinion.html_with_citations %>
+        </div>
+	</div>
+	<%- await include("public/partials/footer.ejs") %>
+	<%- await include("public/partials/ampTag.ejs") %>
+</body>
+
+</html>
