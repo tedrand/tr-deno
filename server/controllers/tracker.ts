@@ -1,6 +1,6 @@
 import { Context } from "https://deno.land/x/abc/mod.ts";
 import { COURT_MAP } from "../constants.ts";
-import { formatLocalPath } from "../utils.ts"
+import { formatLocalPath } from "../utils.ts";
 
 interface Case {
   slug: string,
@@ -12,19 +12,11 @@ interface Case {
 
 export const getCases = async ({ c, key }: { c: Context; key: any }) => {
   const { ct } = c.params;
-  await fetch(
-    `https://www.courtlistener.com/api/rest/v3/opinions/?cluster__docket__court__id=${ct}&date_created_gt=${"2020-05-18"}T00:00:00z`,
-    {
-      method: "GET",
-      headers: {
-        "Authorization": `Token ${key}`,
-      },
-    },
-  )
+  await fetch(`${Deno.env.toObject().PORT}/static/cache/${ct}.json`)
     .then((resp) => resp.json())
     .then(async function (data: any) {
       let cases: Case[] = [];
-      data.results.forEach(function (value: any) {
+      data.forEach(function (value: any) {
         let { slug, name } = formatLocalPath(value.local_path);
         cases.push({
           slug: slug,

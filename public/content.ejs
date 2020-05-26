@@ -3,16 +3,16 @@
 
 <head>
 	<%- await include("public/partials/head.ejs") %>
-	<title><%= data.title %> | T.R.D.C.</title>
-	<meta name="description" content="<%= data.meta_description %>">
+	<title><%= content.title %> | T.R.D.C.</title>
+	<meta name="description" content="<%= content.meta_description %>">
 </head>
 
 <body>
 	<%- await include("public/partials/nav.ejs") %>
 	<div class="container">
-		<h1><%= data.title %></h1>
-		<small id="dateStr"><%= new Date(data.last_updated).toLocaleDateString() %></small>
-		<%- data.html_str %>
+		<h1><%= content.title %></h1>
+		<small id="dateStr"><%= new Date(content.last_updated).toLocaleDateString() %></small>
+		<%- content.html_str %>
 	</div>
 	<%- await include("public/partials/footer.ejs") %>
 	<%- await include("public/partials/ampTag.ejs") %>
