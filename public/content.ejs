@@ -14,6 +14,7 @@
 		<small id="dateStr"><%= new Date(content.last_updated).toLocaleDateString() %></small>
 		<%- content.html_str %>
 	</div>
+	<%- await include("public/partials/cookieConsent.ejs") %>
 	<%- await include("public/partials/footer.ejs") %>
 	<%- await include("public/partials/ampTag.ejs") %>
 </body>
