@@ -19,8 +19,8 @@ app.get("/privacy", async (c) => getContent(c, "privacy"), setPageHeaders);
 app.get("/blog", async (c) => { await c.render("./public/blog.ejs") }, setPageHeaders);
 
 // Court Tracker
-app.get("/tracker/:ct", async (c) => getCases({ c, key: Deno.env.get('CTLSTNR_KEY') }), setPageHeaders);
-app.get("/opinion/:id", async (c) => getOpinion({ c, key: Deno.env.get('CTLSTNR_KEY') }), setPageHeaders);
+app.get("/tracker/:ct", getCases);
+app.get("/opinion/:id", getOpinion);
 
 // Static Files
 app.file("/robots.txt", "./assets/robots.txt");

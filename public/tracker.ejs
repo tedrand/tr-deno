@@ -13,6 +13,24 @@
 	<div class="container">
 		<h1>Court Tracker</h1>
 		<h2><%= name %></h2>
+		<form action="/tracker/<%= ct %>" method="get" id="tracker-search">
+			<div class="form-row">
+				<label for="startDate">Start Date: </label>
+				<input type="date" name="startDate" value="<%= new Date(Date.now() - 604800000).toISOString().split('T')[0] %>">
+			</div>
+			<div class="form-row">
+				<label for="endDate">End Date: </label>
+				<input type="date" name="endDate" value="<%= new Date(Date.now()).toISOString().split('T')[0] %>">
+			</div>
+			<div class="form-row">
+				<label for="partyName">Party Name: </label>
+				<input type="text" name="partyName" value="Tech Co.">
+			</div>
+			<div class="form-row">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+		<hr>
 		<table id="tracker-table">
 			<tr>
 				<th>Case Name</th>

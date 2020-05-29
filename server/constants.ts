@@ -7,5 +7,8 @@ export const COURT_MAP: any = {
     },
     "cadc": {
         name: "U.S. Court of Appeals - D.C. Circuit" 
+    },
+    "ca9": {
+        name: "U.S. Court of Appeals for the Ninth Circuit"
     }
 }

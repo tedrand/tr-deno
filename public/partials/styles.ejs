@@ -77,6 +77,34 @@
         background-color: var(--color-primary);
     }
 
+    label, input {
+        font-family: var(--font-primary);
+        font-size: var(--font-size-primary);
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    label {
+        padding-bottom: .25em;
+    }
+
+    input {
+        border: 1px solid var(--color-dark);
+        padding: .5em;
+        border-radius: .25em;
+    }
+
+    .form-row {
+        display: inline-block;
+        min-width: 45%;
+    }
+
+    #tracker-search {
+        padding: .5em;
+        background-color: var(--font-color-light);
+    }
+
     ::-webkit-scrollbar {
         width: 10px;
     }
@@ -139,8 +167,6 @@
         font-size: var(--font-size-primary);
         border: none;
         outline: none;
-        color: white;
-        padding: 14px 16px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
@@ -175,6 +201,7 @@
 
     .dropdown:hover .dropdown-content {
         display: block;
+        margin-top: 48px;
     }
 
     .thumbnail {

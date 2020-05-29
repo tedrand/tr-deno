@@ -1,0 +1,27 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+	<%- await include("public/partials/head.ejs") %>
+	<title>404 | T.R.D.C.</title>
+	<meta name="description" content="404 - Page not found">
+</head>
+
+<body>
+	<%- await include("public/partials/nav.ejs") %>
+	<div class="container">
+        <h1>404 - Page Not Found</h1>
+        <p>
+            No entries found for court specified.
+        </p>
+        <code>
+            <%- error %>
+            <%- JSON.stringify(data) %>
+        </code>
+	</div>
+	<%- await include("public/partials/cookieConsent.ejs") %>
+	<%- await include("public/partials/footer.ejs") %>
+	<%- await include("public/partials/ampTag.ejs") %>
+</body>
+
+</html>

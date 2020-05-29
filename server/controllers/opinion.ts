@@ -1,7 +1,7 @@
 import { Context } from "https://deno.land/x/abc/mod.ts";
 import { formatLocalPath } from "../utils.ts"
 
-export const getOpinion = async ({ c, key }: { c: Context; key: any }) => {
+export const getOpinion = async (c: Context) => {
     const { id } = c.params;
     
     await fetch(
@@ -9,7 +9,7 @@ export const getOpinion = async ({ c, key }: { c: Context; key: any }) => {
       {
         method: "GET",
         headers: {
-          "Authorization": `Token ${key}`,
+          "Authorization": `Token ${Deno.env.get('CTLSTNR_KEY')}`,
         },
       },
     )

@@ -1,0 +1,1 @@
+denon run --allow-env --allow-net --allow-read main.dev.ts
