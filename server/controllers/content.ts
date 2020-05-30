@@ -16,6 +16,7 @@ export const getContent = async (c: any, slug: string) => {
         if (data.items[i].slug == slug) {
           await c.render(`./public/content.ejs`, {
             content: data.items[i],
+            canonical: c.url
           });
         }
       }

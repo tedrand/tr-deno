@@ -21,7 +21,8 @@ export const getOpinion = async (c: Context) => {
               name: name,
               html_with_citations: data.html_with_citations,
               date_created: data.date_created
-          }
+          },
+          canonical: c.url
         });
       });
   };

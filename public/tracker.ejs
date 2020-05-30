@@ -2,10 +2,8 @@
 <html ⚡ lang="en">
 
 <head>
-	<%- await include("public/partials/head.ejs") %>
-	<title>CourtTracker</title>
-	<meta name="description"
-		content="The CAFC Court Tracker provides the most recent opinions from select courts in the United States.">
+<%- await include("public/partials/head.ejs") %>
+<%- await include("public/meta/tracker.ejs", { name: name, canonical: canonical }) %>
 </head>
 
 <body>
@@ -53,12 +51,8 @@
 			</tr>
 			<% } %>
 		</table>
-
-
 	</div>
-	<%- await include("public/partials/cookieConsent.ejs") %>
 	<%- await include("public/partials/footer.ejs") %>
-	<%- await include("public/partials/ampTag.ejs") %>
 </body>
 
 </html>

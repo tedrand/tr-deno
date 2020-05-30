@@ -3,8 +3,7 @@
 
 <head>
 	<%- await include("public/partials/head.ejs") %>
-	<title><%= content.title %> | T.R.D.C.</title>
-	<meta name="description" content="<%= content.meta_description %>">
+	<%- await include("public/meta/content.ejs", { content: content, canonical: canonical }) %>
 </head>
 
 <body>
@@ -14,9 +13,7 @@
 		<small id="dateStr"><%= new Date(content.last_updated).toLocaleDateString() %></small>
 		<%- content.html_str %>
 	</div>
-	<%- await include("public/partials/cookieConsent.ejs") %>
 	<%- await include("public/partials/footer.ejs") %>
-	<%- await include("public/partials/ampTag.ejs") %>
 </body>
 
 </html>

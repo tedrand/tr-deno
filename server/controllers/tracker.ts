@@ -53,7 +53,8 @@ export const getCases = async (c: Context) => {
         await c.render("./public/tracker.ejs", {
           cases: cases,
           ct: ct,
-          name: ctName
+          name: ctName,
+          canonical: c.url
         });
       } catch (error) {
         await c.render("./public/404.ejs", {

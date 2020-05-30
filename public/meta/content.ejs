@@ -1,0 +1,69 @@
+<title><%= content.title %></title>
+<link rel="canonical" href="<%= canonical %>">
+<meta name="description" content="<%= content.meta_description %>" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-stnippet:-1, max-image-preview:large" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview: large" />
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<%= content.title %>" />
+<meta property="og:description" content="<%= content.meta_description %>" />
+<meta property="og:url" content="<%= canonical %>" />
+<meta property="og:site_name" content="Ted Rand Dot Com" />
+<meta property="article:publisher" content="https://www.facebook.com/ted.rand" />
+<meta property="article:modified_time" content="<%= content.last_updated %>" />
+<meta property="og:image" content="/static/img/headshot.png" />
+<meta property="og:image:width" content="150" />
+<meta property="og:image:height" content="147" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:creator" content="@TedRand2" />
+<meta property="twitter:site" content="@TedRand2" />
+<script type="application/ld+json">
+{
+    "@type": "WebSite",
+    "headline": "Theodore Rand's Personal Blog",
+    "datePublished": "<%= content.date_created %>",
+    "image": ["/static/img/headshot.png"],
+    "@context": "http://schema.org",
+    "@graph": [{
+        "@type": "WebSite",
+        "@id": "https://www.tedrand.com/#website",
+        "url": "https://www.tedrand.com",
+        "name": "Ted Rand Dot Com",
+        "description": "Hey, my name is Theodore (Ted) Rand. Come check out my web site and my new app, OpinionTracker!",
+        "potentialAction": [{
+            "@type": "SearchAction",
+            "target": "https://www.tedrand.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }], 
+        "inLanguage": "en"
+    },{
+        "@type": "ImageObject",
+        "@id": "https://www.tedrand.com/#primaryimage",
+        "inLanguage": "en",
+        "url": "https://www.tedrand.com/static/img/headshot.jpg",
+        "width": 150,
+        "height": 147,
+        "caption": "Feature image for Ted Rand Dot Com home page"
+    }, {
+        "@type": "WebPage",
+        "@id": "<%= canonical %>#webpage",
+        "url": "<%= canonical %>",
+        "name": "Patent Agent & Law Student - JavaScript Hobbyist | Ted Rand",
+        "isPartOf": {
+            "@id": "https://www.tedrand.com/#website"
+        },
+        "primaryImageOfPage": {
+            "@id": "https://www.tedrand.com/#primaryimage"
+        },
+        "datePublished": "<%= content.date_created %>",
+        "dateModified": "<%= content.last_updated %>",
+        "description": "<%= content.meta_description %>",
+        "inLanguage": "en",
+        "potentialAction": [{
+            "@type": "ReadAction",
+            "target": "<%= canonical %>"
+        }]
+    }]
+}
+</script>
