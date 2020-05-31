@@ -8,24 +8,339 @@
 
 
 <url>
-  <loc>https://www.tedrand.com/</loc>
-  <lastmod>2020-05-25T11:46:13+00:00</lastmod>
+  <loc>http://www.tedrand.com/</loc>
+  <lastmod>2020-05-31T14:12:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.tedrand.com/about</loc>
-  <lastmod>2020-05-25T11:46:13+00:00</lastmod>
+  <loc>http://www.tedrand.com/about</loc>
+  <lastmod>2020-05-31T14:12:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.tedrand.com/privacy</loc>
-  <lastmod>2020-05-25T11:46:14+00:00</lastmod>
+  <loc>http://www.tedrand.com/tracker/scotus</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.tedrand.com/terms</loc>
-  <lastmod>2020-05-25T11:46:15+00:00</lastmod>
+  <loc>http://www.tedrand.com/tracker/cafc</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/tracker/cadc</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/privacy</loc>
+  <lastmod>2020-05-31T14:12:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/terms</loc>
+  <lastmod>2020-05-31T14:12:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537922</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535255</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535254</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535085</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4534982</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4534519</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4534194</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4532446</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4532445</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529362</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529361</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529360</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529019</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529018</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529017</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529016</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529015</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4528128</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4528127</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4528126</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537743</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537742</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537741</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537740</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537739</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537738</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537201</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536850</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536849</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536510</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536155</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536154</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535795</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535794</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535484</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535483</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535277</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535276</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535035</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535034</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537692</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537691</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4537690</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536583</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4536492</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4535253</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4534703</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4534702</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4532944</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4531724</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4530858</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4530857</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4529359</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4528769</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4527401</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4527400</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4527399</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4527398</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4526558</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.tedrand.com/opinion/4526557</loc>
+  <lastmod>2020-05-31T14:15:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
