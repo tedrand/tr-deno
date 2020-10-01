@@ -2,6 +2,7 @@ import { MiddlewareFunc } from "https://deno.land/x/abc/mod.ts";
 
 // Set headers for different types of static files that get sent across the server
 export const setStaticHeaders: MiddlewareFunc = next => c => {
+    // Image caching
     if (c.path.indexOf("/static/images/") === 0) {
         c.response.headers = new Headers({
             "cache-control": "public, max-age=2592000",

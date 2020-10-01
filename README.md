@@ -1,6 +1,6 @@
 # Personal Website: Theodore Rand
 
-This is a personal website written in the new language, Deno, that serves AMP pages and also hosts some of my professional content.
+This is a personal website written in Deno that serves AMP pages and also hosts some of my professional content.
 
 # Getting Started
 

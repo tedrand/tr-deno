@@ -1,0 +1,29 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <%- await include("public/partials/head.ejs") %>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+</head>
+
+<body>
+    <%- await include("public/partials/nav.ejs") %>
+    <div class="container">
+        <h1 style="text-align:center;">Blog</h1>
+        <hr>
+        <amp-list width="auto" height="100" layout="fixed-height" src="/static/cache/test.json">
+            <template type="amp-mustache">
+                <div class="url-entry">
+                    <a href="/blog/{{url}}"><h3>{{title}}</h3></a>
+                    <p>{{date_created}}</p>
+                </div>
+            </template>
+        </amp-list>
+    </div>
+
+    
+    <%- await include("public/partials/footer.ejs") %>
+</body>
+
+</html>

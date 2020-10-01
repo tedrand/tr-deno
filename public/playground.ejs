@@ -1,0 +1,47 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <%- await include("public/partials/head.ejs") %>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+</head>
+
+<body>
+    <%- await include("public/partials/nav.ejs") %>
+    <div class="container">
+        <h1 id="titlebar" 
+            style="text-align:center;">
+            Playground
+        </h1>
+        <hr>
+        <amp-animation id="titlebarSlide"
+            layout="nodisplay">
+            <script type="application/json">
+                [{
+                    "duration": "3s",
+                    "fill": "both",
+                    "easing": "ease-out",
+                    "iterations": "1",
+                    "selector": "#titlebar",
+                    "keyframes": [{
+                        "transform": "translateY(100%)"
+                      },
+                      {
+                        "transform": "translateY(0)", "offset": 0.1
+                      },
+                      {
+                        "transform": "translateY(40%)", "offset": 0.5
+                      }]
+                }]
+            </script>
+        </amp-animation>
+        <button on="tap:titlebarSlide.restart">
+            Slide Titlebar
+        </button>
+    </div>
+
+    
+    <%- await include("public/partials/footer.ejs") %>
+</body>
+
+</html>
